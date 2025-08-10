@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dolphin Training Center — Skills for Work</title>
+  <meta name="description" content="Non‑profit skills training: welding, electrician, plumbing, aluminum formwork, sewing, and more. Certificate verification available." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="logo">D</span> Dolphin Training Center</div>
+      <nav>
+        <a href="#courses">Courses</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#verify">Verify</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#verify">Verify Certificate</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="pic-one" src="assets/people.jpeg">
+    <!-- <div class="video-background">
+    <iframe src="https://www.youtube.com/embed/mDd2th1V9Bg?autoplay=1&mute=1&loop=1&playlist=mDd2th1V9Bg&controls=0&showinfo=0&modestbranding=1&rel=0"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+    </iframe>
+  </div> -->
+    <div class="container hero-container">
+      <div class="hero-content">
+        <!-- <span class="eyebrow">Empowering The Community With Skill Development</span> -->
+        <h1>Learn practical skills. Build your career.</h1>
+        <div style="width: 90vh; font-size: 6vh; font-weight:700; line-height:1.05;">With <span style="color:#3983f6">Dolphin Training Center</span></div>
+        <p class="lead">Job‑ready training in welding, electrical, plumbing, aluminum formwork, sewing machine operation, and more. Small batches, hands‑on workshops, and certificate verification for employers.</p>
+        <div class="hero-actions">
+          <a class="btn btn-explore" href="#courses">Explore Our Programs &#8203 &#8595;</a>
+          <a class="btn btn-ask" href="#contact">Enroll / Ask a question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h1 style="margin:0 0 6px">About<span style="color: #3983f6"> Dolphin Training Center</span></h1>
+      <p>Dolphin Training Center (DTC) is a non-profitable, non-political, non-government and secular organization. We are a well-established and well-equipped training center covering all categories of skilled and semi-skilled workers training to fulfill the demand of local and international markets.</p>
+    <button class="learn-btn">Learn more about our Mission</button>
+    <div class="about-flex-parent">
+      <div class="about-c about-skill">Skill-Focused Training
+        <div>Comprehensive programs covering skilled and semi-skilled workers training</div>
+      </div>
+      <div class="about-c intl-standard">International Standard
+        <div>Training designed to meet local and international market demands</div>
+      </div>
+      <div class="about-c expert-ins">Expert Instructors
+        <div>Well-equipped facility with experienced professional trainers</div>
+      </div>
+      <div class="about-c certified-prog">Certified Programs
+        <div>Government recognized certifications and international trade courses</div>
+      </div>
+    </div>  
+  </section>
+
+  <section id="courses">
+    <div class="container">
+      <div class="section-title">Courses</div>
+      <p class="section-lead">Select a category to view programs and entry requirements.</p>
+      <div class="tabs" id="courseTabs">
+        <button class="tab active" data-cat="trade">Trade Skills</button>
+        <button class="tab" data-cat="manufacturing">Manufacturing</button>
+        <button class="tab" data-cat="equipment">Equipment Operation</button>
+      </div>
+
+      <div class="grid" id="courseGrid">
+        <!-- Default (trade) -->
+        <article class="card" data-cat="trade">
+          <div class="thumb"></div>
+          <h3>Welding & Fabrication</h3>
+          <div class="meta"><span>72 days • 360 hrs</span><span>Capacity 25</span></div>
+          <p>Safety, SMAW basics, materials, and fabrication techniques.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+        <article class="card" data-cat="trade">
+          <div class="thumb"></div>
+          <h3>Electrician (House Wiring)</h3>
+          <div class="meta"><span>72 days • 360 hrs</span><span>Capacity 25</span></div>
+          <p>Residential wiring, codes, tools, and installation practice.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+        <article class="card" data-cat="trade">
+          <div class="thumb"></div>
+          <h3>Plumbing & Pipe Fittings</h3>
+          <div class="meta"><span>72 days • 360 hrs</span><span>Capacity 25</span></div>
+          <p>Water supply, drainage, fittings, and maintenance.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+        <!-- Manufacturing -->
+        <article class="card" data-cat="manufacturing" hidden>
+          <div class="thumb"></div>
+          <h3>Sewing Machine Operation</h3>
+          <div class="meta"><span>72 days • 360 hrs</span><span>Capacity 25</span></div>
+          <p>Industrial machine handling, stitching, and QC basics.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+        <article class="card" data-cat="manufacturing" hidden>
+          <div class="thumb"></div>
+          <h3>Furniture & Cabinet Making</h3>
+          <div class="meta"><span>Short course</span><span>Capacity 20</span></div>
+          <p>Woodworking fundamentals, joinery, and finishing.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+        <!-- Equipment -->
+        <article class="card" data-cat="equipment" hidden>
+          <div class="thumb"></div>
+          <h3>Aluminum Formwork</h3>
+          <div class="meta"><span>Short course</span><span>Capacity 25</span></div>
+          <p>Site safety, assembly, and efficient operations.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+        <article class="card" data-cat="equipment" hidden>
+          <div class="thumb"></div>
+          <h3>Crane / Road Roller Operation</h3>
+          <div class="meta"><span>Short course</span><span>Capacity 15</span></div>
+          <p>Safe heavy equipment operation with supervision.</p>
+          <a class="btn" href="#admissions">Apply →</a>
+        </article>
+      </div>
+
+      <div class="bar" style="margin-top:18px">
+        <div>
+          <strong>Corporate & NGO partners</strong>
+          <div class="section-lead">Ask about tailored programs for factories and construction firms.</div>
+        </div>
+        <a class="btn primary" href="#contact">Request proposal →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissions">
+    <div class="container split">
+      <div>
+        <div class="section-title">Admissions & Schedule</div>
+        <p class="section-lead">Small batches, clear entry requirements, and rolling intakes.</p>
+        <div class="timeline">
+          <div class="step"><div class="dot">1</div><div><h4>Choose a course</h4><p>Confirm eligibility and start date from the schedule.</p></div></div>
+          <div class="step"><div class="dot">2</div><div><h4>Submit application</h4><p>Fill the form or visit us with NID/passport copy and two photos.</p></div></div>
+          <div class="step"><div class="dot">3</div><div><h4>Orientation & safety</h4><p>Attend the safety briefing and confirm your seat with the first installment.</p></div></div>
+          <div class="step"><div class="dot">4</div><div><h4>Training begins</h4><p>Hands‑on workshops with assessments and practical projects.</p></div></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3 style="margin:0 0 8px">Next Intakes</h3>
+        <ul style="margin:0; padding-left:18px">
+          <li>Welding & Fabrication — Sept 15</li>
+          <li>Electrician (House Wiring) — Oct 1</li>
+          <li>Plumbing & Pipe Fittings — Oct 10</li>
+          <li>Aluminum Formwork — Rolling</li>
+        </ul>
+        <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap">
+          <a class="btn primary" href="#contact">Reserve a seat</a>
+          <a class="btn" href="#contact">Ask a question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="verify">
+    <div class="container">
+      <div class="section-title">Verify a Certificate</div>
+      <p class="section-lead">Employers can confirm trainee credentials using the certificate number.</p>
+      <form class="bar" onsubmit="event.preventDefault(); alert('Demo: Redirect to /verify?cert=xxxx');">
+        <input class="input" required placeholder="Certificate Number" />
+        <button class="btn primary" type="submit">Check</button>
+      </form>
+      <p class="section-lead" style="margin-top:10px">Need help? Email <strong>dolphincenter01@gmail.com</strong></p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-title">FAQ</div>
+      <div class="split">
+        <div>
+          <details open>
+            <summary>How long are the courses?</summary>
+            <p>Most programs run 72 days (~360 hours). Short courses vary by topic.</p>
+          </details>
+          <details>
+            <summary>Do you offer job placement support?</summary>
+            <p>We work with contractors and factories to connect graduates with openings.</p>
+          </details>
+          <details>
+            <summary>What documents are needed to enroll?</summary>
+            <p>NID/passport copy, two passport photos, and the first installment.</p>
+          </details>
+        </div>
+        <div class="hero-card">
+          <h3 style="margin:0 0 8px">Contact</h3>
+          <p>Dolphin Training Center (DTC) • Bangla Bazar, Norosinghapur, Ashulia, Savar, Dhaka‑1341</p>
+          <p><strong>Phone:</strong> +880 1889‑981‑044 • <strong>Email:</strong> dolphincenter01@gmail.com</p>
+          <a class="btn" href="#contact">Open map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">Get in Touch</div>
+      <div class="grid">
+        <form class="card" onsubmit="event.preventDefault(); alert('Thanks! We\'ll reply by email.');">
+          <h3 style="margin:0 0 6px">Send a message</h3>
+          <input class="input" required placeholder="Your name" />
+          <input class="input" required type="email" placeholder="Email" />
+          <textarea class="input" required placeholder="Message" style="min-height:120px"></textarea>
+          <button class="btn primary" type="submit">Send →</button>
+        </form>
+        <div class="card">
+          <h3 style="margin:0 0 6px">Visit us</h3>
+          <p>Sun–Thu • 9:00–17:00</p>
+          <p>Bangla Bazar, Norosinghapur, Ashulia, Savar, Dhaka‑1341, Bangladesh</p>
+          <a class="btn" href="#">Open in Google Maps</a>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px">WhatsApp</h3>
+          <p>Chat with admissions for schedules and fees.</p>
+          <a class="btn" href="#">Message now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap">
+      <div>© <span id="year"></span> Dolphin Training Center (DTC)</div>
+      <div class="section-lead">Non‑profit skills for jobs</div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
